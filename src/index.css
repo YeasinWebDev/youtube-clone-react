@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+  html, body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .tag{
+    height: 50px;
+    margin-bottom: 0px;
+  }
+  .root-tag{
+    height: 60px;
+  }
+  .channelTag {
+    white-space: nowrap;
+  }
+  .channel{
+    margin: 10px 20px;
+  }
+  .searchvideo{
+    padding-left: 1px;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+  .searchText{
+    font-size: 20px;
+  }
+  .react-player {
+    width: 100% !important;
+  }
+  .vedioContent{
+    margin:2px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .videodetial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
